@@ -5,7 +5,7 @@ import java.util.*;
 import java.text.*;
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException{
 	// write your code here
         NumberFormat fmt = NumberFormat.getNumberInstance();
         fmt.setMinimumFractionDigits(2);
@@ -26,7 +26,7 @@ public class Main {
                 bankAccount theAccount = new bankAccount(name, amount);
                 iter.add(theAccount);
             }
-        } while (!name.equalsIgnoreCase("EXIT"));
+        } while (!(name.equalsIgnoreCase("EXIT"))||name.equalsIgnoreCase("debug"));
 
         // Search aryLst and print out the name and amount of the largest bank
         // account
