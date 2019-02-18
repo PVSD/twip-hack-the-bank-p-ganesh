@@ -1,9 +1,7 @@
 package com.company;
 import java.io.*;
+import java.util.*;
 
-/**
- * Created by dpennebacker on 2/13/17.
- */
 public class bankAccount implements Comparable {
     public FileWriter fw = new FileWriter("log.txt");
     public PrintWriter output = new PrintWriter(fw);
